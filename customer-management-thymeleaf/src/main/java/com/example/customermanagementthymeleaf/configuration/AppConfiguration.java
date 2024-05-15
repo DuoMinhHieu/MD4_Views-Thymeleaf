@@ -17,7 +17,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.example.customermanagementthymeleaf")
+@ComponentScan("com.example.customermanagementthymeleaf.controller")
 public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAware {
 
     private ApplicationContext applicationContext;
@@ -53,9 +53,4 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
         viewResolver.setCharacterEncoding("UTF-8");
         return viewResolver;
     }
-    public CustomerService createObjCusSv() {
-        ICustomerService customerService = new CustomerService();
-        return (CustomerService) customerService;
-    }
-    templateResolver.setPrefix("/WEB-INF/views/");
 }

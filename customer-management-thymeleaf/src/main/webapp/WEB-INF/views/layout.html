@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
-<head th:replace="/layout :: head">
+<head th:fragment="head">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -44,39 +44,39 @@
             box-sizing: border-box;
         }
 
-        input[type=submit] {
-            width: 300px;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-align: center;
-        }
+        /*input[type=submit] {*/
+        /*    width: 300px;*/
+        /*    background-color: #4CAF50;*/
+        /*    color: white;*/
+        /*    padding: 14px 20px;*/
+        /*    margin: 8px 0;*/
+        /*    border: none;*/
+        /*    border-radius: 4px;*/
+        /*    cursor: pointer;*/
+        /*    text-align: center;*/
+        /*}*/
 
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
+        /*input[type=submit]:hover {*/
+        /*    background-color: #45a049;*/
+        /*}*/
 
-        #form {
-            width: 500px;
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
+        /*#form {*/
+        /*    width: 500px;*/
+        /*    border-radius: 5px;*/
+        /*    background-color: #f2f2f2;*/
+        /*    padding: 20px;*/
+        /*}*/
 
         .notify span{font-size: 15px; color: blue;}
     </style>
 </head>
 <body>
 
-<!--<footer th:fragment="footer">-->
-<!--    &copy; 2021 CodeGym-->
-<!--    -->
-<!--</footer>-->
-<footer th:replace="/layout :: footer"></footer>
+<footer th:fragment="footer">
+    &copy; 2021 CodeGym
+
+</footer>
+<!--<footer th:replace="/layout :: footer">codegym</footer>-->
 
 </body>
 </html>
